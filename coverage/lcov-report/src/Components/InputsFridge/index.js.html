@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/Components/InputsFridge/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\index.html">All files</a> / <a href="index.html">src/Components/InputsFridge</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/59</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/42</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/48</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import React from 'react'</span>
+<span class="cstat-no" title="statement not covered" >import logic from '../../logic'</span>
+<span class="cstat-no" title="statement not covered" >import './index.sass'</span>
+&nbsp;
+class InputsFridge extends React.Component <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >{</span></span>
+    state = {
+        numberInputs: 1,
+        userCal: 2500,
+        calories: 0,
+        diet: 'indifferent',
+        activeVegan: false,
+        activeVegeterian: false,
+        activeGluten: false,
+        activePeanut: false,
+        input1: '',
+        input2: '',
+        input3: '',
+        input4: '',
+        input5: ''
+    }
+&nbsp;
+&nbsp;
+    handleFormSubmit = <span class="fstat-no" title="function not covered" >event</span> =&gt; <span class="cstat-no" title="statement not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >        event.preventDefault()</span>
+&nbsp;
+        const { state: { input1, input2, input3, input4, input5, calories, diet, activeVegan, activeVegeterian, activeSugar, activePeanut }, props: { onSearch } } = <span class="cstat-no" title="statement not covered" >this</span>
+&nbsp;
+        let query = <span class="cstat-no" title="statement not covered" >''</span>
+<span class="cstat-no" title="statement not covered" >        if (input1) <span class="cstat-no" title="statement not covered" >q</span>uery += input1 + '+'</span>
+<span class="cstat-no" title="statement not covered" >        if (input2) <span class="cstat-no" title="statement not covered" >q</span>uery += input2 + '+'</span>
+<span class="cstat-no" title="statement not covered" >        if (input3) <span class="cstat-no" title="statement not covered" >q</span>uery += input3 + '+'</span>
+<span class="cstat-no" title="statement not covered" >        if (input4) <span class="cstat-no" title="statement not covered" >q</span>uery += input4 + '+'</span>
+<span class="cstat-no" title="statement not covered" >        if (input5) <span class="cstat-no" title="statement not covered" >q</span>uery += input5 + '+'</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        query = query.slice(0, query.length - 1)  //To eliminate the last +</span>
+&nbsp;
+        let health = <span class="cstat-no" title="statement not covered" >[]</span>
+<span class="cstat-no" title="statement not covered" >        if (activeVegan) <span class="cstat-no" title="statement not covered" >h</span>ealth.push('vegan')</span>
+<span class="cstat-no" title="statement not covered" >        if (activeVegeterian) <span class="cstat-no" title="statement not covered" >h</span>ealth.push('vegetarian')</span>
+<span class="cstat-no" title="statement not covered" >        if (activeSugar) <span class="cstat-no" title="statement not covered" >h</span>ealth.push('sugar-conscious')</span>
+<span class="cstat-no" title="statement not covered" >        if (activePeanut) <span class="cstat-no" title="statement not covered" >h</span>ealth.push('peanut-free')</span>
+&nbsp;
+&nbsp;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        onSearch(query, calories, diet, health)</span>
+    }
+&nbsp;
+    handleSearch1Input = <span class="fstat-no" title="function not covered" >event</span> =&gt; <span class="cstat-no" title="statement not covered" >this.setState({ input1: event.target.value })</span>
+    handleSearch2Input = <span class="fstat-no" title="function not covered" >event</span> =&gt; <span class="cstat-no" title="statement not covered" >this.setState({ input2: event.target.value })</span>
+    handleSearch3Input = <span class="fstat-no" title="function not covered" >event</span> =&gt; <span class="cstat-no" title="statement not covered" >this.setState({ input3: event.target.value })</span>
+    handleSearch4Input = <span class="fstat-no" title="function not covered" >event</span> =&gt; <span class="cstat-no" title="statement not covered" >this.setState({ input4: event.target.value })</span>
+    handleSearch5Input = <span class="fstat-no" title="function not covered" >event</span> =&gt; <span class="cstat-no" title="statement not covered" >this.setState({ input5: event.target.value })</span>
+&nbsp;
+    handleAdd = <span class="fstat-no" title="function not covered" >event</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        event.preventDefault()</span>
+        const { state: { numberInputs } } = <span class="cstat-no" title="statement not covered" >this</span>
+<span class="cstat-no" title="statement not covered" >        if (numberInputs &gt;= 1 &amp;&amp; numberInputs &lt; 5) <span class="cstat-no" title="statement not covered" >t</span>his.setState({ numberInputs: numberInputs + 1 })</span>
+    }
+&nbsp;
+    handleDelete = <span class="fstat-no" title="function not covered" >event</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        event.preventDefault()</span>
+        const { state: { numberInputs } } = <span class="cstat-no" title="statement not covered" >this</span>
+<span class="cstat-no" title="statement not covered" >        if (numberInputs &gt; 1 &amp;&amp; numberInputs &lt;= 5) <span class="cstat-no" title="statement not covered" >t</span>his.setState({ numberInputs: numberInputs - 1 })</span>
+    }
+&nbsp;
+    handleCalories = <span class="fstat-no" title="function not covered" >event</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        event.preventDefault()</span>
+<span class="cstat-no" title="statement not covered" >        this.setState({ calories: event.target.value })</span>
+    }
+&nbsp;
+    handleDietInput = <span class="fstat-no" title="function not covered" >event</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        event.preventDefault()</span>
+<span class="cstat-no" title="statement not covered" >        this.setState({ diet: event.target.value })</span>
+    }
+&nbsp;
+    handleVegan = <span class="fstat-no" title="function not covered" >event</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        event.preventDefault()</span>
+<span class="cstat-no" title="statement not covered" >        this.setState({ activeVegan: !this.state.activeVegan })</span>
+    }
+&nbsp;
+    handleVegeterian = <span class="fstat-no" title="function not covered" >event</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        event.preventDefault()</span>
+<span class="cstat-no" title="statement not covered" >        this.setState({ activeVegeterian: !this.state.activeVegeterian })</span>
+    }
+&nbsp;
+    handleSugar = <span class="fstat-no" title="function not covered" >event</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        event.preventDefault()</span>
+<span class="cstat-no" title="statement not covered" >        this.setState({ activeSugar: !this.state.activeSugar })</span>
+    }
+&nbsp;
+    handlePeanut = <span class="fstat-no" title="function not covered" >event</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        event.preventDefault()</span>
+<span class="cstat-no" title="statement not covered" >        this.setState({ activePeanut: !this.state.activePeanut })</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    render</span>() <span class="cstat-no" title="statement not covered" >{</span>
+        const { state: { numberInputs, calories, activeVegan, activeVegeterian, activeSugar, activePeanut } } = <span class="cstat-no" title="statement not covered" >this</span>
+&nbsp;
+        const user = <span class="cstat-no" title="statement not covered" >JSON.parse(sessionStorage.getItem('user'))</span>
+        const maxCalories = <span class="cstat-no" title="statement not covered" >logic.caloriesCounter(user.gender, user.height, user.weight, user.birthDate, user.lifeStyle)</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return &lt;section className="inputsFridge"&gt;</span>
+            &lt;h2 className="text-center display-2 mt-3"&gt;What's on your fridge?&lt;/h2&gt;
+            &lt;div className="inputsFridge__box container pl-lg-5 pr-lg-5 mt-3"&gt;
+                &lt;form onSubmit={this.handleFormSubmit} className="form-group container mb-3 " &gt;
+                    &lt;div className="row mt-4"&gt;
+&nbsp;
+                        &lt;input onChange={this.handleSearch1Input} type="text" className="col col-12 form-control mt-5" name="query1" placeholder="Ingredient 1" required /&gt;
+&nbsp;
+                        {numberInputs &gt;= 2 &amp;&amp; &lt;input onChange={this.handleSearch2Input} type="text" className="col col-12 form-control mt-1" name="query2" placeholder="Ingredient 2" required /&gt;}
+                        {numberInputs &gt;= 3 &amp;&amp; &lt;input onChange={this.handleSearch3Input} type="text" className="col col-12 form-control mt-1" name="query3" placeholder="Ingredient 3" required /&gt;}
+                        {numberInputs &gt;= 4 &amp;&amp; &lt;input onChange={this.handleSearch4Input} type="text" className="col col-12 form-control mt-1" name="query4" placeholder="Ingredient 4" required /&gt;}
+                        {numberInputs === 5 &amp;&amp; &lt;input onChange={this.handleSearch5Input} type="text" className="col col-12 form-control mt-1" name="query5" placeholder="Ingredient 5" required /&gt;}
+&nbsp;
+                    &lt;/div&gt;
+                    &lt;div className='row'&gt;
+                        &lt;div className='col-0 col-sm-6'&gt;&lt;/div&gt;
+                        &lt;button onClick={this.handleAdd} className="btn btn-dark col-12 col-sm-3 mt-2 "&gt;Add Ingredient&lt;/button&gt;
+                        &lt;div className="col-12 col-sm-3 pl-sm-2 p-0 mt-2"&gt;
+                            &lt;button onClick={this.handleDelete} className="btn btn-outline-dark col-12"&gt;Delete&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+&nbsp;
+                    &lt;div className='row calories mt-3'&gt;
+                        &lt;h3 className='calories__title'&gt;Calories &lt;span className='ml-2 calories__value'&gt;{calories}&lt;/span&gt;&lt;/h3&gt;
+                        &lt;input onChange={this.handleCalories} className='calories__input col-12 p-0 ' type="range" name="points" min="0" max={maxCalories} /&gt;
+                    &lt;/div&gt;
+&nbsp;
+                    &lt;div className='row mt-5'&gt;
+                        &lt;label htmlFor="diet" className="col col-md-3 col-sm-12 flex mt-1 diet__title"&gt;Diet&lt;/label&gt;
+                        &lt;select onChange={this.handleDietInput} value={this.state.value} name="lifestyle" className="col col-md-9 col-12 form-control mt-1"&gt;
+                            &lt;option value="indifferent"&gt;Indifferent&lt;/option&gt;
+                            &lt;option value="balanced"&gt;Balanced: Protein/Fat/Carb values in 15/35/50 ratio&lt;/option&gt;
+                            &lt;option value="high-protein"&gt;High-Protein: More than 50% of total calories from proteins&lt;/option&gt;
+                            &lt;option value="low-carb"&gt;Low-Carb: Less than 20% of total calories from carbs&lt;/option&gt;
+                            &lt;option value="low-fat"&gt;Low-Fat: Less than 15% of total calories from fat&lt;/option&gt;
+&nbsp;
+                        &lt;/select&gt;
+                    &lt;/div&gt;
+&nbsp;
+                    &lt;div className='row'&gt;
+                        &lt;div className="col-12 col-sm-3 pl-sm-2 p-0 mt-2"&gt;
+                            &lt;button onClick={this.handleVegan} className={`btn btn-outline-dark col-12 ${activeVegan ? `active` : ``}`}&gt;Vegan&lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div className="col-12 col-sm-3 pl-sm-2 p-0 mt-2"&gt;
+                            &lt;button onClick={this.handleVegeterian} className={`btn btn-outline-dark col-12 ${activeVegeterian ? `active` : ``}`}&gt;Vegeterian&lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div className="col-12 col-sm-3 pl-sm-2 p-0 mt-2"&gt;
+                            &lt;button onClick={this.handleSugar} className={`btn btn-outline-dark col-12 ${activeSugar ? `active` : ``}`}&gt;Low-Sugar&lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div className="col-12 col-sm-3 pl-sm-2 p-0 mt-2"&gt;
+                            &lt;button onClick={this.handlePeanut} className={`btn btn-outline-dark col-12 ${activePeanut ? `active` : ``}`}&gt;Peanut-Free&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+&nbsp;
+                    &lt;div className="row flex mt-5"&gt;
+                        &lt;button type="submit" className="btn btn-dark col-12 mr-2"&gt;Search&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    }
+}
+&nbsp;
+export default InputsFridge
+&nbsp;
+&nbsp;
+&nbsp;
+// var inputs=1;
+&nbsp;
+// onClick= inouts ++
+&nbsp;
+&nbsp;
+// render()
+//     for (i=0; i&lt;inouts; i++) {
+//         &lt;Search placeholder=`ingredient ${inputs}`&gt;&lt;/Search&gt;
+//     }</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Feb 08 2019 12:56:43 GMT+0100 (GMT+01:00)
+</div>
+</div>
+<script src="..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\sorter.js"></script>
+</body>
+</html>

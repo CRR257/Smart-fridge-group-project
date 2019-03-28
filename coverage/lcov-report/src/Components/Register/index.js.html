@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/Components/Register/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\index.html">All files</a> / <a href="index.html">src/Components/Register</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/20</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/20</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import React from 'react'</span>
+<span class="cstat-no" title="statement not covered" >import './index.sass'</span>
+&nbsp;
+class Register extends React.Component <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >{</span></span>
+&nbsp;
+    state = { 
+        name: '', 
+        surname: '', 
+        email: '', 
+        password: '', 
+        confirmPassword: '', 
+        gender:'', 
+        height: null, 
+        weigth: null, 
+        birthDay:'', 
+        lifeStyle: 'sedentary' 
+    }
+&nbsp;
+    handleNameInput = <span class="fstat-no" title="function not covered" >event</span> =&gt; <span class="cstat-no" title="statement not covered" >this.setState({ name: event.target.value })</span>
+    handleSurnameInput = <span class="fstat-no" title="function not covered" >event</span> =&gt; <span class="cstat-no" title="statement not covered" >this.setState({ surname: event.target.value })</span>
+    handleEmailInput = <span class="fstat-no" title="function not covered" >event</span> =&gt; <span class="cstat-no" title="statement not covered" >this.setState({ email: event.target.value })</span>
+    handlePasswordInput = <span class="fstat-no" title="function not covered" >event</span> =&gt; <span class="cstat-no" title="statement not covered" >this.setState({ password: event.target.value })</span>
+    handleConfirmPasswordInput = <span class="fstat-no" title="function not covered" >event</span> =&gt; <span class="cstat-no" title="statement not covered" >this.setState({ confirmPassword: event.target.value })</span>
+&nbsp;
+    handleGenderInput= <span class="fstat-no" title="function not covered" >event</span> =&gt; <span class="cstat-no" title="statement not covered" >this.setState({gender: event.currentTarget.value})</span>
+    handleHeightInput= <span class="fstat-no" title="function not covered" >event</span> =&gt; <span class="cstat-no" title="statement not covered" >this.setState({height: parseInt(event.target.value)})</span>
+    handleWeidthInput= <span class="fstat-no" title="function not covered" >event</span> =&gt; <span class="cstat-no" title="statement not covered" >this.setState({weigth: parseInt(event.target.value)})</span>
+    handleBirthInput= <span class="fstat-no" title="function not covered" >event</span> =&gt; <span class="cstat-no" title="statement not covered" >this.setState({birthDay: event.target.value})</span>
+    handleLifeStyleInput = <span class="fstat-no" title="function not covered" >event</span> =&gt; <span class="cstat-no" title="statement not covered" >this.setState({lifeStyle: event.target.value})</span>
+&nbsp;
+&nbsp;
+    handleFormSubmit = <span class="fstat-no" title="function not covered" >event</span> =&gt; <span class="cstat-no" title="statement not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >        event.preventDefault()</span>
+&nbsp;
+        const { state: { name, surname, email, password, confirmPassword, gender, height, weigth, birthDay, lifeStyle }, props: { onRegister } } = <span class="cstat-no" title="statement not covered" >this</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        onRegister(name, surname, email, password, confirmPassword, gender, height, weigth, birthDay, lifeStyle)</span>
+    }
+&nbsp;
+    handleLoginButton = <span class="fstat-no" title="function not covered" >event</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        event.preventDefault()</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        this.props.registerToLogin()</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    render</span>() {
+<span class="cstat-no" title="statement not covered" >        return &lt;section className="register"&gt;</span>
+            &lt;div className="register__box container pl-lg-5 pr-lg-5"&gt;
+                &lt;h2 className="col-2 mt-3"&gt;Register&lt;/h2&gt;
+                &lt;form onSubmit={this.handleFormSubmit} className="login__form form-group container mb-3 " &gt;
+                    &lt;div className="row mr-2"&gt;
+                        &lt;label htmlFor="name" className="col col-md-3 col-sm-12 flex mt-1"&gt;Name&lt;/label&gt;
+                        &lt;input onChange={this.handleNameInput} type="text" className="col col-md-9 col-12 form-control mt-1" name="name" placeholder="Name" required /&gt;
+                        &lt;label htmlFor="surname" className="col col-md-3 col-sm-12 flex mt-1"&gt;Surname&lt;/label&gt;
+                        &lt;input onChange={this.handleSurnameInput} type="text" className="col col-md-9 col-12 form-control mt-1" name="surname" placeholder="Surname" required /&gt;
+                        &lt;label htmlFor="email" className="col col-md-3 col-sm-12 flex mt-1"&gt;Email&lt;/label&gt;
+                        &lt;input onChange={this.handleEmailInput} type="email" className="col col-md-9 col-12 form-control mt-1" name="email" placeholder="Email" required /&gt;
+                        &lt;label htmlFor="password" className="col col-md-3 col-sm-12 flex mt-1"&gt;Password&lt;/label&gt;
+                        &lt;input onChange={this.handlePasswordInput} type="password" className="col col-md-9 col-12 form-control mt-1" name="password" placeholder="Password" required /&gt;
+                        &lt;label htmlFor="password" className="col col-md-3 col-sm-12 flex mt-1"&gt;Confirm Password&lt;/label&gt;
+                        &lt;input onChange={this.handleConfirmPasswordInput} type="password" className="col col-md-9 col-12 form-control mt-1" name="confirmPassword" placeholder="Confirm Password" required /&gt;
+&nbsp;
+                        &lt;div className='mt-4 col-12 p-0'&gt;
+                            &lt;h2 className="text-center mt-3"&gt;About you&lt;/h2&gt;
+                            &lt;div className='mt-2 col-12 text-center'&gt;
+                                &lt;input onChange={this.handleGenderInput} className='mr-2' type="radio" id="male" name="gender" value="male" required/&gt;
+                                &lt;label className='mr-5' for="male"&gt;Male&lt;/label&gt;
+                                &lt;input onChange={this.handleGenderInput} className='mr-2' type="radio" id="female" name="gender" value="female" required /&gt;
+                                &lt;label for="female"&gt;Female&lt;/label&gt;
+                            &lt;/div&gt;
+                            &lt;div className='row'&gt;
+                                &lt;div className='col-12 col-md-4'&gt;
+                                    &lt;label htmlFor="height" className="flex mt-1"&gt;Height (cm)&lt;/label&gt;
+                                    &lt;input onChange={this.handleHeightInput} type="text" className="form-control mt-1" name="height" placeholder="Height (cm)" required /&gt;
+                                &lt;/div&gt;
+                                &lt;div className='col-12 col-md-4'&gt;
+                                    &lt;label htmlFor="weigth" className="flex mt-1"&gt;Weigth (kg)&lt;/label&gt;
+                                    &lt;input onChange={this.handleWeidthInput} type="text" className="form-control mt-1" name="weigth" placeholder="Weigth (kg)" required /&gt;
+                                &lt;/div&gt;
+                                &lt;div className='col-12 col-md-4'&gt;
+                                    &lt;label htmlFor="birthDay" className="flex mt-1"&gt;Birth Day&lt;/label&gt;
+                                    &lt;input onChange={this.handleBirthInput} type="date" className="form-control mt-1" name="birthDay" placeholder="Birth Day" required /&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div className='row mt-5'&gt;
+                                &lt;label htmlFor="lifestyle" className="col col-md-3 col-sm-12 flex mt-1"&gt;Life Style&lt;/label&gt;
+                                &lt;select onChange={this.handleLifeStyleInput} value={this.state.value} name="lifestyle" className="col col-md-9 col-12 form-control mt-1"&gt;
+                                    &lt;option value="sedentary"&gt;Sedentary or Light activity (1 or 2 times per month)&lt;/option&gt;
+                                    &lt;option value="active"&gt;Active or Moderate active (1 or 2 times per week)&lt;/option&gt;
+                                    &lt;option value="vigorouse"&gt;Vigorously active (4 times per week or more)&lt;/option&gt;
+                                &lt;/select&gt;
+                            &lt;/div&gt;
+&nbsp;
+                        &lt;/div&gt;
+&nbsp;
+                    &lt;/div&gt;
+                   
+                    &lt;div className="row mt-3"&gt;
+                            &lt;div className="col-md-3 col-0"&gt;&lt;/div&gt;
+                            &lt;button type="submit" className="btn btn-dark col-12 col-sm-6"&gt;Register&lt;/button&gt;
+                            &lt;div className="p-0 pt-2 pt-sm-0 pl-sm-2 col-12 col-sm-6 col-md-3"&gt;
+                                &lt;button onClick={this.handleLoginButton} href="#" className="btn btn-outline-light col-12"&gt;Login&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    }
+&nbsp;
+}
+&nbsp;
+export default Register</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Feb 08 2019 12:56:43 GMT+0100 (GMT+01:00)
+</div>
+</div>
+<script src="..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\sorter.js"></script>
+</body>
+</html>
